@@ -1,7 +1,8 @@
 <?php
 
-use Pecee\SimpleRouter\SimpleRouter;
+use My\Portfolio\Base\Router;
 use My\Portfolio\Controllers\Frontend\HomeController;
 
 // Define a route
-SimpleRouter::get(BASE_DIR . '/', [HomeController::class, 'index']);
+Router::get('/', [HomeController::class, 'index']);
+Router::get('/create', [HomeController::class, 'create']);

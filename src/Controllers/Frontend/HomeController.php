@@ -20,7 +20,7 @@ class HomeController extends Controller
 
       public function create()
       {
-            return view('create');
+            return view('crud/create');
       }
 
       public function store()

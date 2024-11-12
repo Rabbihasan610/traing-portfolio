@@ -9,12 +9,16 @@ $dotenv->load();
 
 
 define('ROOT', __DIR__);
-// define('ASSETS_DIR', __DIR__ . '/assets/');
+
+define('ASSET_DIR', __DIR__ . '/assets');
 
 define('BASE_DIR', isset($_ENV['BASE_DIR']) ? $_ENV['BASE_DIR'] : '/RawPHP/portfolio');
 
 define('URL', $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] . '/' . BASE_DIR);
+//URL = http://localhost/RawPHP/portfolio/
+
 define('ASSET_URL', URL . '/assets');
+
 
 /* Load external routes file */
 require_once 'routes/routes.php';

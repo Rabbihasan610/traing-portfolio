@@ -11,7 +11,7 @@
 
       <h1>Simple PHP Lightwegiht MVC</h1>
 
-      <form action="<?php \Pecee\SimpleRouter\SimpleRouter::post(BASE_DIR . '/store', [My\Portfolio\Controllers\Frontend\HomeController::class, 'store']); ?>" method="post">
+      <form action="/" method="post">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
             <br>
