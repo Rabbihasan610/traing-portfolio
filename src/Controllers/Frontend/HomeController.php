@@ -9,22 +9,12 @@ class HomeController extends Controller
 {
       public function index()
       {
-            // retrun some data to the view
 
-            $user = new User();
-
-            $users = $user->get();
-
-            return view('index', $users);
+            return view('Frontend/master');
       }
 
-      public function create()
+      public function about()
       {
-            return view('crud/create');
-      }
-
-      public function store()
-      {
-            echo 'create store';
+            return view('Frontend/pages/about');
       }
 }
